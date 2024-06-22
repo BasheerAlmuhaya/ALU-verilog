@@ -1,0 +1,92 @@
+{F:/projects_modelsim/Comprator 1.2/Comprator/test_project.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/test_project.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module test_project
+
+Top level modules:
+	test_project
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/testmul.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/testmul.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module testmul
+
+Top level modules:
+	testmul
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/equ_nbit.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/equ_nbit.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module equ_nbit
+
+Top level modules:
+	equ_nbit
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/add_1bit.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/add_1bit.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module add_1bit
+
+Top level modules:
+	add_1bit
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/alu_cmp.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/alu_cmp.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module alu_cmp
+
+Top level modules:
+	alu_cmp
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/add_nbit.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/add_nbit.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module add_nbit
+
+Top level modules:
+	add_nbit
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/sub_nbit.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/sub_nbit.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module sub_nbit
+
+Top level modules:
+	sub_nbit
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/Mux2to1_gate.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/Mux2to1_gate.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module Mux2to1_gate
+
+Top level modules:
+	Mux2to1_gate
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/mux8_1bit.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/mux8_1bit.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module mux8_1bit
+
+Top level modules:
+	mux8_1bit
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/mul_nbit.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/mul_nbit.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module mul_nbit
+
+Top level modules:
+	mul_nbit
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/alu_exe.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/alu_exe.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module alu_exe
+
+Top level modules:
+	alu_exe
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/lth_nbit.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/lth_nbit.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module lth_nbit
+
+Top level modules:
+	lth_nbit
+
+} {} {}} {F:/projects_modelsim/Comprator 1.2/Comprator/shf_nbit.v} {1 {vlog -work work -vopt -stats=none {F:/projects_modelsim/Comprator 1.2/Comprator/shf_nbit.v}
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module shf_nbit
+
+Top level modules:
+	shf_nbit
+
+} {} {}}

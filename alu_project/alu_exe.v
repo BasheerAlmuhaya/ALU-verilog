@@ -1,0 +1,128 @@
+ 
+module alu_exe( input wire clk,
+ input wire rst,
+ input wire [ 5:0] oper,
+ input wire [31:0] src0,
+ input wire [31:0] src1,
+ output wire [31:0] dst_lo,
+ output wire [31:0] dst_hi );
+
+parameter FUNCT_ADD =6'b100000 ;
+parameter FUNCT_SUB =6'b100010 ;
+parameter FUNCT_MUL =6'b000010 ;
+parameter FUNCT_MULT =6'b011000 ;
+parameter FUNCT_AND =6'b100100 ;
+parameter FUNCT_OR =6'b100101 ;
+parameter FUNCT_XOR =6'b100110 ;
+parameter FUNCT_NOR =6'b100111 ;
+parameter FUNCT_SLLV =6'b000100 ;
+parameter FUNCT_SRLV =6'b000110 ;
+parameter n = 32;
+
+wire [n-1:0] w0;
+wire [2*n-1:0] w1;
+wire [n-1:0] w2;
+wire [n-1:0] w3;
+wire [n-1:0] w4;
+wire [n-1:0] w5;
+wire [n-1:0] w6;
+
+wire [n-1:0] n0;
+wire [n-1:0] n1;
+wire [2*n-1:0] n2;
+wire [n-1:0] n3;
+wire [n-1:0] n4;
+wire [2*n-1:0] n5;
+//wire [2:0] s2;
+
+ add_nbit t0(.ci(1'b0),.r(n0),.x(~src0),.y(32'b1));
+ add_nbit t1(.ci(1'b0),.r(n1),.x (~src1),.y(32'b1));
+ add_nbit t2(.ci(1'b0),.r(n2),.x (~w1),.y(64'b1));
+
+ defparam t0.n = 32;
+ defparam t1.n = 32;
+ defparam t2.n = 64;
+
+ assign n3 = src0[31] ? n0 : src0;
+ assign n4 = src1[31] ? n1 : src1;
+ assign n5 = src0[31] != src1[31] ? n2 : w1;
+
+ assign ci = 0;
+ reg shf_rst ;
+ reg mul_rst ;
+ reg s0 ;
+ reg s1 ;
+
+ sub_nbit t3( .ctrl( s0),  .ci  ( ci),     .co ( co),.x ( src0),.y ( src1),.r ( w0) );
+ mul_nbit t4( .clk ( clk), .rst (mul_rst), .x ( n3), .y ( n4), .r ( w1) );
+ shf_nbit t5( .clk ( clk), .rst (shf_rst), .oper( s1), .x ( src0), .y ( src1), .r ( w2) );
+
+ defparam t3.n = 32;
+ defparam t4.n = 32;
+ defparam t4.m = 5;
+ defparam t5.n = 32;
+ defparam t5.m = 5;
+
+ reg [2:0] s2;
+
+ 
+ genvar i;
+ generate
+ for( i = 0; i < 32; i = i + 1 )
+ begin:gen_alu_exe
+ and t6( w3[i], src0[i], src1[i] );
+ or  t7( w4[i], src0[i], src1[i] );
+ xor t8( w5[i], src0[i], src1[i] );
+ nor t9( w6[i], src0[i], src1[i] );
+
+ mux8_1bit ta( .r(dst_lo[i]), .i0(w0[i]), .i1(n5[i+ 0]), .i2(w2[i]), .i3(w3[i ]), .i4(w4[i]), .i5(w5[i ]), .i6(w6[i]), .i7(1'bZ ),
+		 .s0(s2[0]), .s1(s2[1]), .s2(s2[2]) );
+
+ mux8_1bit tb( .r(dst_hi[i]), .i0(1'bZ ), .i1(n5[i+32]), .i2(1'bZ ), .i3(1'bZ ), .i4(1'bZ ), .i5(1'bZ ), .i6(1'bZ ), .i7(1'bZ ),
+		 .s0(s2[0]), .s1(s2[1]), .s2(s2[2]) );
+ end
+ endgenerate
+
+always @ ( negedge clk )
+ begin
+ shf_rst = 0;
+ mul_rst = 0;
+ end
+
+ always @ ( oper )
+ begin
+ case( oper )
+ FUNCT_ADD : begin
+ s0 = 0;
+ s2 = 0;
+ end
+ FUNCT_SUB : begin
+ s0 = 1;
+ s2 = 0;
+ end
+ FUNCT_MUL : begin
+ mul_rst = 1;
+ s2 = 1;
+ end
+ FUNCT_MULT : begin
+ mul_rst = 1;
+ s2 = 1;
+ end
+
+ FUNCT_AND : s2 = 3;
+ FUNCT_OR : s2 = 4;
+ FUNCT_XOR : s2 = 5;
+ FUNCT_NOR : s2 = 6;
+ FUNCT_SLLV : begin
+ shf_rst = 1;
+ s1 = t5.SHF_L_LOGIC;
+ s2 = 2;
+ end
+ FUNCT_SRLV : begin
+ shf_rst = 1;
+ s1 =t5.SHF_R_LOGIC;
+ s2 = 2;
+ end
+ endcase
+ end
+ endmodule

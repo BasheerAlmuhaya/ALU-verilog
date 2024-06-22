@@ -1,0 +1,303 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Osama Abdullah/Documents/Decoder
+T_opt
+!s110 1561597881
+VQYBZ;j<mV43gd7Z;WWfRL2
+Z1 04 12 4 work test_project fast 0
+=1-c85b76e4e5cc-5d1417b9-d6-394c
+o-quiet -auto_acc_if_foreign -work work +acc=bcglnprst+add_1bit +acc=bcglnprst+lth_nbit +acc=bcglnprst+Mux2to1_gate +acc=bcglnprst+add_nbit +acc=bcglnprst+alu_cmp +acc=bcglnprst+mux8_1bit +acc=bcglnprst+shf_nbit +acc=bcglnprst+mul_nbit +acc=bcglnprst+sub_nbit +acc=bcglnprst+alu_exe +acc=bcglnprst+equ_nbit
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.7;67
+R0
+vadd_1bit
+!s110 1567887751
+!i10b 1
+!s100 ZVBd?EDSg?1`zGzEHM6<z3
+IGcGCn[_;?=2Z0GCUAL?B60
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 dF:/projects_modelsim/Comprator 1.2/Comprator
+w1561339076
+8F:/projects_modelsim/Comprator 1.2/Comprator/add_1bit.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/add_1bit.v
+L0 1
+Z6 OL;L;10.7;67
+r1
+!s85 0
+31
+Z7 !s108 1567887751.000000
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/add_1bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/add_1bit.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vadd_nbit
+Z9 !s110 1567887752
+!i10b 1
+!s100 UgWf7V8;TJejlL>i=NNf]3
+Idej6^>00kG>zV9Xj[<F;^2
+R4
+R5
+w1561338106
+8F:/projects_modelsim/Comprator 1.2/Comprator/add_nbit.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/add_nbit.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/add_nbit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/add_nbit.v|
+!i113 0
+R8
+R2
+valu_cmp
+R9
+!i10b 1
+!s100 kdREUa4Z1Y?dig82n_0MW0
+IW@Z0RRGije^QU]2Z@O6ZK3
+R4
+R5
+w1561411914
+8F:/projects_modelsim/Comprator 1.2/Comprator/alu_cmp.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/alu_cmp.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z10 !s108 1567887752.000000
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/alu_cmp.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/alu_cmp.v|
+!i113 0
+R8
+R2
+valu_exe
+R9
+!i10b 1
+!s100 O2ZI4?nGVUUB:kL3Q`W?]2
+IAQb<>KN=QziV9ejDO9BBX2
+R4
+R5
+w1566938781
+8F:/projects_modelsim/Comprator 1.2/Comprator/alu_exe.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/alu_exe.v
+L0 2
+R6
+r1
+!s85 0
+31
+R10
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/alu_exe.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/alu_exe.v|
+!i113 0
+R8
+R2
+vequ_nbit
+R9
+!i10b 1
+!s100 YVA2biRnNFRXmzd6DoI[^2
+IWd[]QNMmYX28g:C=bP9LW3
+R4
+R5
+w1561338290
+8F:/projects_modelsim/Comprator 1.2/Comprator/equ_nbit.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/equ_nbit.v
+L0 1
+R6
+r1
+!s85 0
+31
+R10
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/equ_nbit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/equ_nbit.v|
+!i113 0
+R8
+R2
+vlth_nbit
+R9
+!i10b 1
+!s100 2`Nc5]P?ZCI7_^;3a^LZC0
+IDiVEli>Ji>>;SSho[JEPR3
+R4
+R5
+w1561338456
+8F:/projects_modelsim/Comprator 1.2/Comprator/lth_nbit.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/lth_nbit.v
+L0 1
+R6
+r1
+!s85 0
+31
+R10
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/lth_nbit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/lth_nbit.v|
+!i113 0
+R8
+R2
+vmul_nbit
+!s110 1567890053
+!i10b 1
+!s100 m@d112eQWf2?B19S7KV^73
+I13GJ6dV=2BP;LlEHn_@EG2
+R4
+R5
+w1567888207
+8F:/projects_modelsim/Comprator 1.2/Comprator/mul_nbit.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/mul_nbit.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1567890053.000000
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/mul_nbit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/mul_nbit.v|
+!i113 0
+R8
+R2
+vMux2to1_gate
+Z11 !s110 1567887754
+!i10b 1
+!s100 ]=dYhniNQfB`8Z?4SYYg33
+Ij[^WoZPlZ]Xh`0B955d:D1
+R4
+R5
+w1561595095
+8F:/projects_modelsim/Comprator 1.2/Comprator/Mux2to1_gate.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/Mux2to1_gate.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z12 !s108 1567887754.000000
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/Mux2to1_gate.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/Mux2to1_gate.v|
+!i113 0
+R8
+R2
+n@mux2to1_gate
+vmux8_1bit
+R11
+!i10b 1
+!s100 2oQC9;5l[k2KDJfY]LjF]2
+Ib`nLFL8KCXlZn4i3V3JjS2
+R4
+R5
+w1561595647
+8F:/projects_modelsim/Comprator 1.2/Comprator/mux8_1bit.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/mux8_1bit.v
+L0 1
+R6
+r1
+!s85 0
+31
+R12
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/mux8_1bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/mux8_1bit.v|
+!i113 0
+R8
+R2
+vshf_nbit
+Z13 !s110 1567887753
+!i10b 1
+!s100 E^5BRBW;ng<fBL4kLNbKX1
+I1jiLQXk<zegM@ZGkeSWPW0
+R4
+R5
+w1561588446
+8F:/projects_modelsim/Comprator 1.2/Comprator/shf_nbit.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/shf_nbit.v
+L0 2
+R6
+r1
+!s85 0
+31
+Z14 !s108 1567887753.000000
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/shf_nbit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/shf_nbit.v|
+!i113 0
+R8
+R2
+vsub_nbit
+R13
+!i10b 1
+!s100 XVHAd?WXoXRO<IcGDd2h>0
+Ig3SMAS6HGH8ZRa1X7Q4Zi3
+R4
+R5
+w1561338850
+8F:/projects_modelsim/Comprator 1.2/Comprator/sub_nbit.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/sub_nbit.v
+L0 1
+R6
+r1
+!s85 0
+31
+R14
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/sub_nbit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/sub_nbit.v|
+!i113 0
+R8
+R2
+Ttest
+!s110 1567968267
+V7iLH;Gk<nJ=J;SziU><b52
+R1
+o+acc=bcglnprst+add_1bit +acc=bcglnprst+lth_nbit +acc=bcglnprst+Mux2to1_gate +acc=bcglnprst+add_nbit +acc=bcglnprst+alu_cmp +acc=bcglnprst+mux8_1bit +acc=bcglnprst+shf_nbit +acc=bcglnprst+mul_nbit +acc=bcglnprst+sub_nbit +acc=bcglnprst+alu_exe +acc=bcglnprst+equ_nbit
+R2
+ntest
+R3
+R0
+vtest_project
+!s110 1567968247
+!i10b 1
+!s100 5VhVL[VD]j?>AmDXnm?S`3
+InIfGY1Xi?_oS5Vae4MabP3
+R4
+R5
+w1567968242
+8F:/projects_modelsim/Comprator 1.2/Comprator/test_project.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/test_project.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1567968247.000000
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/test_project.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/test_project.v|
+!i113 0
+R8
+R2
+vtestmul
+!s110 1567891461
+!i10b 1
+!s100 =g:ZA>kTbfal8AgiXTOA42
+IlJo<^cGM7FhIb`kEN4eB83
+R4
+R5
+w1567891457
+8F:/projects_modelsim/Comprator 1.2/Comprator/testmul.v
+FF:/projects_modelsim/Comprator 1.2/Comprator/testmul.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1567891461.000000
+!s107 F:/projects_modelsim/Comprator 1.2/Comprator/testmul.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/projects_modelsim/Comprator 1.2/Comprator/testmul.v|
+!i113 0
+R8
+R2
